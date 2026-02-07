@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Tieba Mobile Fix",
+  "version": "1.0",
+  "description": "Improve font size and layout for Tieba on mobile devices.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://tieba.baidu.com/*",
+        "*://www.tieba.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
+
